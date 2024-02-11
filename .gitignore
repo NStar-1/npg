@@ -2,4 +2,5 @@
 .godot/
 
 # Assets
-*.{png,jpg,jpeg,ogg}$
+*.png
+*.ogg
