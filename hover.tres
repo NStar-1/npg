@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://6goq6pa5hts8"]
+
+[ext_resource type="Shader" path="res://glow.gdshader" id="1_v3keq"]
+
+[resource]
+shader = ExtResource("1_v3keq")
+shader_parameter/Smooth = true
+shader_parameter/width = 25.0
+shader_parameter/outline_color = Color(0.890196, 0.690196, 0.0901961, 0.882353)
+shader_parameter/pixel_size = 3
+shader_parameter/width_speed = 6.775

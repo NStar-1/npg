@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://wo0woqf31cmp"]
+
+[ext_resource type="Material" uid="uid://6goq6pa5hts8" path="res://hover.tres" id="1_0pl3o"]
+[ext_resource type="Texture2D" uid="uid://cuawcdqi5jqoa" path="res://assets/house1.png" id="2_d3ytg"]
+[ext_resource type="Script" path="res://House1.gd" id="3_w5ksa"]
+[ext_resource type="Script" path="res://Area2D.gd" id="4_vtsys"]
+
+[node name="MapItem" type="Node2D"]
+
+[node name="Area" type="Area2D" parent="."]
+script = ExtResource("4_vtsys")
+
+[node name="collision" type="CollisionPolygon2D" parent="Area"]
+polygon = PackedVector2Array(11, 102, 13, 164, 114, 218, 183, 174, 187, 100, 124, 10)
+
+[node name="sprite" type="Sprite2D" parent="Area"]
+material = ExtResource("1_0pl3o")
+texture = ExtResource("2_d3ytg")
+centered = false
+script = ExtResource("3_w5ksa")
